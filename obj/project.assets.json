@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Instana.ManagedTracing.Sdk/1.209.1": {
+        "type": "package",
+        "compile": {
+          "ref/net45/Instana.ManagedTracing.Api.dll": {},
+          "ref/net45/Instana.ManagedTracing.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Instana.ManagedTracing.Api.dll": {},
+          "lib/net45/Instana.ManagedTracing.Sdk.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -92,6 +103,22 @@
     }
   },
   "libraries": {
+    "Instana.ManagedTracing.Sdk/1.209.1": {
+      "sha512": "OfnLreXzIBXzhEgPIN66J8hkKWc8BTFDUDDuI5x7SHQ+bJWX7IRkofb1tTxJzFXtKM7Qsdq3Ish2c03/g1S3Nw==",
+      "type": "package",
+      "path": "instana.managedtracing.sdk/1.209.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "instana.managedtracing.sdk.1.209.1.nupkg.sha512",
+        "instana.managedtracing.sdk.nuspec",
+        "lib/net45/Instana.ManagedTracing.Api.dll",
+        "lib/net45/Instana.ManagedTracing.Sdk.dll",
+        "ref/net45/Instana.ManagedTracing.Api.dll",
+        "ref/net45/Instana.ManagedTracing.Sdk.dll"
+      ]
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "type": "package",
@@ -220,6 +247,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Instana.ManagedTracing.Sdk >= 1.209.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -260,6 +288,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Instana.ManagedTracing.Sdk": {
+            "target": "Package",
+            "version": "[1.209.1, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
@@ -287,5 +319,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Instana.ManagedTracing.Sdk 1.209.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Instana.ManagedTracing.Sdk",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
