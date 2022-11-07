@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VinObazPWtl2quX50nwgBPXeEa9ArGEj4Mkb0B7GZ/0=",
+  "Source": "TestService",
+  "BasePath": "_content/TestService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
