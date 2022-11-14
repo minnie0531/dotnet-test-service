@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Instana.ManagedTracing.Sdk" Version="1.209.1" />
+    <PackageReference Include="Instana.Tracing.Core" Version="1.235.1" />
     <PackageReference Include="Instana.Tracing.Core.Sdk" Version="1.215.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
