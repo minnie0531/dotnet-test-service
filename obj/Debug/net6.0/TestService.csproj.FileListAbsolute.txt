@@ -25,3 +25,5 @@
 /Users/minheekim/workplace/instana/TestService/obj/Debug/net6.0/TestService.pdb
 /Users/minheekim/workplace/instana/TestService/obj/Debug/net6.0/TestService.genruntimeconfig.cache
 /Users/minheekim/workplace/instana/TestService/obj/Debug/net6.0/ref/TestService.dll
+/Users/minheekim/workplace/instana/TestService/bin/Debug/net6.0/Instana.ManagedTracing.Api.dll
+/Users/minheekim/workplace/instana/TestService/bin/Debug/net6.0/Instana.ManagedTracing.Sdk.dll

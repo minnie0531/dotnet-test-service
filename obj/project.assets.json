@@ -13,6 +13,31 @@
           "lib/net45/Instana.ManagedTracing.Sdk.dll": {}
         }
       },
+      "Instana.Tracing.Core/1.200.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Instana.Tracing.Api.dll": {},
+          "ref/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll": {},
+          "ref/netstandard2.0/Instana.Tracing.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Instana.Tracing.Api.dll": {},
+          "lib/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll": {},
+          "lib/netstandard2.0/Instana.Tracing.Core.dll": {}
+        }
+      },
+      "Instana.Tracing.Core.Sdk/1.215.2": {
+        "type": "package",
+        "dependencies": {
+          "Instana.Tracing.Core": "1.200.2"
+        },
+        "compile": {
+          "ref/netstandard2.0/Instana.Tracing.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Instana.Tracing.Sdk.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -117,6 +142,39 @@
         "lib/net45/Instana.ManagedTracing.Sdk.dll",
         "ref/net45/Instana.ManagedTracing.Api.dll",
         "ref/net45/Instana.ManagedTracing.Sdk.dll"
+      ]
+    },
+    "Instana.Tracing.Core/1.200.2": {
+      "sha512": "uTm0BBxVK1t2H8u7vvDZy8imiKBscu0DYeqQvmjxnrYsPaLsAH7RneuJCJfa/hbeD4Zqf3xMJimx07yIPu+edA==",
+      "type": "package",
+      "path": "instana.tracing.core/1.200.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "instana.tracing.core.1.200.2.nupkg.sha512",
+        "instana.tracing.core.nuspec",
+        "lib/netstandard2.0/Instana.Tracing.Api.dll",
+        "lib/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll",
+        "lib/netstandard2.0/Instana.Tracing.Core.dll",
+        "readme.txt",
+        "ref/netstandard2.0/Instana.Tracing.Api.dll",
+        "ref/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll",
+        "ref/netstandard2.0/Instana.Tracing.Core.dll"
+      ]
+    },
+    "Instana.Tracing.Core.Sdk/1.215.2": {
+      "sha512": "TPEh3wK9B+Gnj338OFPxyWN+ZCUJpkR8QdYaDJOERLbmp3IJv3m/e1Z9auBmCTZTkEGj1VO/PC+7tAyXcx2HrA==",
+      "type": "package",
+      "path": "instana.tracing.core.sdk/1.215.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "instana.tracing.core.sdk.1.215.2.nupkg.sha512",
+        "instana.tracing.core.sdk.nuspec",
+        "lib/netstandard2.0/Instana.Tracing.Sdk.dll",
+        "ref/netstandard2.0/Instana.Tracing.Sdk.dll"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -248,6 +306,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Instana.ManagedTracing.Sdk >= 1.209.1",
+      "Instana.Tracing.Core.Sdk >= 1.215.2",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -291,6 +350,10 @@
           "Instana.ManagedTracing.Sdk": {
             "target": "Package",
             "version": "[1.209.1, )"
+          },
+          "Instana.Tracing.Core.Sdk": {
+            "target": "Package",
+            "version": "[1.215.2, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

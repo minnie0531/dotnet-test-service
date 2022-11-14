@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QuULXF1uOBMtjVMkZuatao7RXQKc+f4PzMmow/JhKcQ9EQzgY+Q4YHPKVENLzx+Cr1VrR4s7m138Jfishi/x6g==",
+  "dgSpecHash": "WwVKCGlYkpeSCBlh0aI7BMEPbRkSgyixJ/xMI7dJ4tFUdDZP8/iePlIdot0TnMUClWekVsV6XwxamksNFtlWMg==",
   "success": true,
   "projectFilePath": "/Users/minheekim/workplace/instana/TestService/TestService.csproj",
   "expectedPackageFiles": [
     "/Users/minheekim/.nuget/packages/instana.managedtracing.sdk/1.209.1/instana.managedtracing.sdk.1.209.1.nupkg.sha512",
+    "/Users/minheekim/.nuget/packages/instana.tracing.core/1.200.2/instana.tracing.core.1.200.2.nupkg.sha512",
+    "/Users/minheekim/.nuget/packages/instana.tracing.core.sdk/1.215.2/instana.tracing.core.sdk.1.215.2.nupkg.sha512",
     "/Users/minheekim/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/minheekim/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/minheekim/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
